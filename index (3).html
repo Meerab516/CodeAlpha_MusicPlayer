@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meerab — Frontend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#top" class="logo">Meerab<span class="dot">.</span>dev</a>
+  <nav class="nav-links">
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Software Engineering student · Frontend intern</p>
+      <h1>Building interfaces that hold up under real use.</h1>
+      <p class="hero-sub">I'm Meerab — a frontend developer who cares about the small details: the state that's easy to reason about, the layout that survives a smaller screen, the button that feels right to press.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">See my work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="hero-editor" aria-hidden="true">
+      <div class="editor-window">
+        <div class="editor-topbar">
+          <div class="editor-dots"><span></span><span></span><span></span></div>
+          <div class="editor-tabs">
+            <span class="tab active">profile.js</span>
+            <span class="tab">skills.js</span>
+          </div>
+        </div>
+        <div class="editor-body">
+          <pre><code><span class="ln">1</span><span class="tok-kw">const</span> <span class="tok-var">meerab</span> <span class="tok-op">=</span> <span class="tok-punc">{</span>
+<span class="ln">2</span>  <span class="tok-prop">role</span><span class="tok-punc">:</span> <span class="tok-str">"Frontend Developer"</span><span class="tok-punc">,</span>
+<span class="ln">3</span>  <span class="tok-prop">status</span><span class="tok-punc">:</span> <span class="tok-str">"open to opportunities"</span><span class="tok-punc">,</span>
+<span class="ln">4</span>  <span class="tok-prop">stack</span><span class="tok-punc">:</span> <span class="tok-punc">[</span><span class="tok-str">"HTML"</span><span class="tok-punc">,</span> <span class="tok-str">"CSS"</span><span class="tok-punc">,</span> <span class="tok-str">"JavaScript"</span><span class="tok-punc">]</span><span class="tok-punc">,</span>
+<span class="ln">5</span>  <span class="tok-prop">builds</span><span class="tok-punc">:</span> <span class="tok-punc">()</span> <span class="tok-op">=&gt;</span> <span class="tok-str">"clean, working UI"</span><span class="tok-punc">,</span>
+<span class="ln">6</span><span class="tok-punc">}</span><span class="cursor">&nbsp;</span></code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-head">
+      <p class="eyebrow">About</p>
+      <h2>Currently studying Software Engineering, building in the browser.</h2>
+    </div>
+    <p class="about-copy">I'm early in my Software Engineering degree and spending that time where it counts: shipping real interfaces. Right now that means frontend internships where I take a task from a blank file to something a stranger could actually use — no shortcuts on responsiveness, accessibility, or the little interaction details that make an interface feel finished.</p>
+
+    <div class="stack-row">
+      <span class="chip">HTML5</span>
+      <span class="chip">CSS3</span>
+      <span class="chip">JavaScript</span>
+      <span class="chip">Responsive Design</span>
+      <span class="chip">Git &amp; GitHub</span>
+      <span class="chip">DOM APIs</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-head">
+      <p class="eyebrow">Projects</p>
+      <h2>A few things I've built and shipped.</h2>
+    </div>
+
+    <div class="project-grid">
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-tag">JavaScript</span>
+        </div>
+        <h3>Calculator</h3>
+        <p>A keyboard-operable calculator with real-time display, built to handle edge cases like divide-by-zero and chained operations cleanly.</p>
+        <div class="project-links">
+          <a href="https://github.com/Meerab516/CodeAlpha_Calculator" target="_blank" rel="noopener">Code</a>
+          <a href="https://meerab516.github.io/CodeAlpha_Calculator/" target="_blank" rel="noopener">Live demo</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-tag">HTML · CSS · JS</span>
+        </div>
+        <h3>This Portfolio</h3>
+        <p>The site you're looking at. Hand-built layout, no template — designed around a code-editor motif that fits a developer's own workspace.</p>
+        <div class="project-links">
+          <a href="https://github.com/Meerab516/CodeAlpha_PortfolioSite" target="_blank" rel="noopener">Code</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-top">
+          <span class="project-tag">JavaScript · Audio API</span>
+        </div>
+        <h3>Music Player</h3>
+        <p>A browser music player with play/pause, track switching, a scrubbable progress bar, and volume control.</p>
+        <div class="project-links">
+          <a href="https://github.com/Meerab516/CodeAlpha_MusicPlayer" target="_blank" rel="noopener">Code</a>
+          <a href="https://meerab516.github.io/CodeAlpha_MusicPlayer/" target="_blank" rel="noopener">Live demo</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" class="section resume-section">
+    <div class="section-head">
+      <p class="eyebrow">Resume</p>
+      <h2>Want the short version?</h2>
+    </div>
+    <p class="about-copy">Download a copy of my resume, or reach out directly — I reply fastest by email.</p>
+    <a href="resume.pdf" class="btn btn-primary" download>Download resume</a>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="section-head">
+      <p class="eyebrow">Contact</p>
+      <h2>Let's talk about what you're building.</h2>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send message</button>
+      <p class="form-status" id="formStatus" role="status"></p>
+    </form>
+
+    <div class="contact-links">
+      <a href="mailto:meerabshahid323@gmail.com">meerabshahid323@gmail.com</a>
+      <a href="https://github.com/Meerab516" target="_blank" rel="noopener">github.com/Meerab516</a>
+      <a href="https://www.linkedin.com/in/meerab-shahid-a267b3363" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Built from scratch by Meerab — no template.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
